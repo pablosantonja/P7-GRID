@@ -1,0 +1,100 @@
+<!DOCTIPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-grid</title>
+    </head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 250px);
+        }
+        .expos{
+            font-weight: 900;
+            background: blue;
+        }
+        .expos img{
+            object-fit: cover;
+            object-position: center center;
+            height: 100%;
+        }
+        .ex1{
+            background: darkred ;
+            color: white;
+        }
+        .ex4{
+            background: white;
+        }
+        .ex5{
+            background: black;
+            color: white;
+        }
+        .ex1, .ex4, .ex5, .ex8{
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+            padding: 2em 4em;
+        }
+        .ex2, .ex3, .ex6, .ex7{
+            grid-column: span 3;
+        }
+        h1{
+            font-size: 2.5em;
+            line-height: 1em;
+            flex-grow: 1;
+        }
+        h2{
+            font-size: 1.9em;
+            text-align: right; 
+           
+         
+        }
+    </style>
+    <body>
+        <div class="container">
+        <div class="expos ex1">
+            <h1>Josef Muller</h1>
+            <h2>exposicio permanent</h2>
+        </div>
+        <div class="expos ex2">
+                    <img src="image%201.jpg" alt="">
+            </div>
+        <div class="expos ex3">
+                    <img src="image%202.jpg" alt="">
+            </div>
+        <div class="expos ex4">
+                    
+                    <h1>Josep Renau</h1>
+                    <h2>exposicio permanent</h2>
+            </div>
+            <div class="expos ex5">
+                    
+                    <h1>Josef Muller</h1>
+                    <h2>exposicio permanent</h2>
+            </div>
+            <div class="expos ex6">
+                    <img src="image%203.jpg" alt="">
+            </div>
+            <div class="expos ex7">
+                    <img src="image%204.jpg" alt="">
+            </div>
+            <div class="expos ex8">
+                   
+                    <h1>Josep Renau</h1>
+                    <h2>exposicio permanent</h2>
+            </div>
+        </div>
+    </body>
+</html>
